@@ -1,0 +1,23 @@
+
+[{shop_url}] 
+
+You have recived a new sample order
+
+It was placed on shop {shop_name}
+
+SAMPLE ORDER: Placed on {date}
+
+
+PRODUCTS 
+
+{products}
+
+ADDRESS
+<span style="font-weight:bold;">{company}</span><br>
+{siret}<br>
+<br>
+<span style="font-weight:bold;">{firstname}</span>
+<span style="font-weight:bold;">{lastname}</span><br>
+{address}<br>
+{address2}<br>
+{postcode} {city}<br>

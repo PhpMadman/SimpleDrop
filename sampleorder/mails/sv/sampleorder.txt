@@ -1,0 +1,23 @@
+
+[{shop_url}] 
+
+Du har fått en ny varuprovs order
+
+Den beställdes på {shop_name}
+
+VARUPROV ORDER: Beställd {date}
+
+
+PRODUKTER 
+
+{products}
+
+ADRESS
+<span style="font-weight:bold;">{company}</span><br>
+{siret}<br>
+<br>
+<span style="font-weight:bold;">{firstname}</span>
+<span style="font-weight:bold;">{lastname}</span><br>
+{address}<br>
+{address2}<br>
+{postcode} {city}<br>

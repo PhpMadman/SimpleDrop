@@ -1,0 +1,12 @@
+Version 0.2
+* Code norm
+* Removed useless code
+* Removed idiotic class
+* Renamed files and classes
+* Started from scrach on form
+* Rewritten form layout
+* Added configuration option to module
+* Rewrote configuration to use a new array code
+* Added logged in check
+* Added a new mail template
+* Added is logged in check
