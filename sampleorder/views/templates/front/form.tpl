@@ -30,9 +30,9 @@
 		<p class="required form-group">
 			<label for="address">{l s='Address' mod='sampleorder'} <sup>*</sup></label>
 			{if isset($customer)}
-				<input type="text" class="is_required form-control" id="address" name="address" value="{if isset($smarty.post.address)}{$smarty.post.address}{/if}" required />
+				<input type="text" class="is_required form-control" id="address1" name="address" value="{if isset($smarty.post.address)}{$smarty.post.address}{/if}" required />
 			{else}
-				<input type="text" class="is_required form-control" id="address" name="address" value="{if isset($smarty.post.address)}{$smarty.post.address}{/if}" required />
+				<input type="text" class="is_required form-control" id="address1" name="address" value="{if isset($smarty.post.address)}{$smarty.post.address}{/if}" required />
 			{/if}
 		</p>
 		<p class="required form-group">
