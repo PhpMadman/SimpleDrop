@@ -87,6 +87,7 @@ class SampleOrderFormModuleFrontController extends ModuleFrontController
 					'{date}' => Tools::displayDate(date('Y-m-d H:i:s')),
 				);
 
+				$company = Tools::getValue('company');
 				Mail::Send(
 				$this->context->language->id, // The customer deside the language of the mail
 				'sampleorder',
@@ -95,7 +96,7 @@ class SampleOrderFormModuleFrontController extends ModuleFrontController
 				Configuration::get('PS_MOD_SAMPO_TO'),
 				'Sample Order',
 				Tools::getValue('email'),
-				(!empty(Tools::getValue('company')) ? Tools::getValue('company').' ' : '').Tools::getValue('firstname').' '.Tools::getValue('lastname'),
+				($company != '' ? $company.' ' : '').Tools::getValue('firstname').' '.Tools::getValue('lastname'),
 				null,
 				null,
 				$this->module->getLocalPath().'mails/',
