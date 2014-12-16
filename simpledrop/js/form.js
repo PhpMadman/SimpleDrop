@@ -4,5 +4,6 @@ $(document).ready(function()
 		e.preventDefault();
 		var next = $(this).attr('value');
 		$('#div_drop_'+next).show();
+		$('#'+this.id).hide();
 	});
 });
