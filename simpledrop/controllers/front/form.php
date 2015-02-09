@@ -68,11 +68,12 @@ class SimpleDropFormModuleFrontController extends ModuleFrontController
 
 					 // If we got references but not pdf, error is found
 					if ($gotLines)
-// 						$error_msg .= '<li>'.$this->module->l('Order '.$key.' is missing the pdf file','form').'</li>';
+					{
 // 						$error_msg .= '<li>'.$this->module->l('Order '.$key.' is missing the pdf file','form').'</li>';
 						$error_msg .= '<li>'.$this->module->l('Order','form');
 						$error_msg .= ' '.$key.' ';
 						$error_msg .= $this->module->l('is missing the pdf file','form').'</li>';
+					}
 // 						$error_msg .= '<li>'.$this->module->l(sprintf('Order %d is missing the pdf file', $key),'form').'</li>';
 // 						sprintf(Tools::displayError('The "%s" table does not exist.'), $e[$key]['table']);
 				}
@@ -138,7 +139,7 @@ class SimpleDropFormModuleFrontController extends ModuleFrontController
 
 			if ($error_msg)
 				$this->context->smarty->assign(array(
-					'error' => '<p>'.$this->module->l('Errors was detected').'</p><br><ol>'.$error_msg.'</ol>'
+					'error' => '<p>'.$this->module->l('Errors was detected').'</p><br><ul>'.$error_msg.'</ul>'
 				));
 			else
 			{
